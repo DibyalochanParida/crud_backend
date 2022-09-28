@@ -15,19 +15,6 @@ static async getUsers(req,res){
     }
 }
 
-static async getUser(req,res){
-    try{
-        const data = await User.findOne({
-            where:{
-                id:req.params.id
-            }
-        });
-        res.status(httpStatus.OK).send({ status: true, data: data });
-    }catch(error){
-        res.status(httpStatus.INTERNAL_SERVER_ERROR).send({ status: false, message: error.message });
-    }
-}
-
 // post data
 
 static async postUsers(req,res){

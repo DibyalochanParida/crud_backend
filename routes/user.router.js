@@ -5,7 +5,6 @@ export default function(router){
 // get users
 
 router.get('/users',UserController.getUsers)
-router.get('/users/:id',UserController.getUser)
 
 //post users
 
