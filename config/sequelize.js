@@ -1,7 +1,6 @@
 import Sequelize from 'sequelize';
 
-const sequelize = new Sequelize('sql5522538', 'sql5522538', 'cmabhLUUmY', {
-    host: 'sql5.freesqldatabase.com',
+const sequelize = new Sequelize('usersdb', 'root', 'root', {
     logging:false,
     dialect: 'mysql',
   });
