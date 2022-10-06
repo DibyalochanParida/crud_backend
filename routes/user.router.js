@@ -15,6 +15,6 @@ router.post('/userspost',UserController.postUsers)
 router.delete('/usersdelete/:id',UserController.deleteUser)
 
 //Update
-router.patch('/userspatch/:id',UserController.patchUser)
+
 router.put('/usersput/:id',UserController.putUser)
 }

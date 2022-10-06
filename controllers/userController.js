@@ -46,20 +46,6 @@ static async deleteUser(req,res){
 
 // Update data
 
-static async patchUser(req,res){
-    try{
-        const updatedData= req.body;
-        const data = await User.update(updatedData,{
-            where:{
-                id:req.params.id
-            }
-        });
-        res.status(httpStatus.OK).send({ status: true, data: data });
-    }catch(error){
-        res.status(httpStatus.INTERNAL_SERVER_ERROR).send({ status: false, message: error.message });
-    }
-}
-
 static async putUser(req,res){
     try{
         const updatedData= req.body;
